@@ -67,7 +67,7 @@ main{
 .card{
     height: 200px;
     width: 28%;
-    border: 3px solid rgb(182, 174, 101);
+    /*border: 3px solid rgb(182, 174, 101);*/
     text-align: center;
 }
 
@@ -166,28 +166,16 @@ footer{
     font-family: 'Times New Roman', Times, serif;
 }
 
-.cardp{
+/*.cardp{
     float: right;
     margin-right: 80px;
     text-align: center;
-}
-
-.cardp a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
 }
 
 .cardp2{
     float: left;
     margin-left: 80px;
     text-align: center;
-}
-
-.cardp2 a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
 }
 
 .cardp3{
@@ -197,12 +185,6 @@ footer{
     text-align: center;
 }
 
-.cardp3 a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-}
-
 .cardp4{
     float: left;
     margin-left: 80px;
@@ -210,10 +192,103 @@ footer{
     text-align: center;
 }
 
+
+}*/
+
+.cardp a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.cardp2 a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.cardp3 a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+}
+
 .cardp4 a{
     text-decoration: none;
     color: black;
     font-weight: bold;
+    font-size: 15px;
+}
+
+.cardp5 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.cardp6 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.team{
+    display: grid;
+    grid-template-columns: calc(3, 1fr);
+    grid-template-rows: calc(2, 1fr);
+    grid-template-areas: "cardp cardp3 cardp5"
+    "cardp2 cardp4 cardp6";
+    grid-gap: 20px;
+    background-color: rgb(211, 200, 105);
+}
+
+.cardp{
+    grid-area: cardp;
+    background-size: cover;
+    background-position: center;
+    margin-left: 120px;
+    text-align: start;
+}
+
+.cardp2{
+    grid-area: cardp2;
+    background-size: cover;
+    background-position: center;
+    margin-left: 120px;
+    text-align: start;
+}
+
+.cardp3{
+    grid-area: cardp3;
+    background-size: cover;
+    background-position: center;
+    text-align: start;
+}
+
+.cardp4{
+    grid-area: cardp4;
+    background-size: cover;
+    background-position: center;
+    text-align: start;
+}
+
+.cardp5{
+    grid-area: cardp5;
+    background-size: cover;
+    background-position: center;
+    text-align: start;
+}
+
+.cardp6{
+    grid-area: cardp6;
+    background-size: cover;
+    background-position: center;
+    text-align: start;
 }
 
 .redesp{
