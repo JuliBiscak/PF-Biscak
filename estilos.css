@@ -266,9 +266,14 @@ footer{
     height: calc(100vh - 90px);
     width: 100%;
     /*background-color: #000;
-    background-image: url(imagenes/beef-g7b5d65d76_1280.png);*/
+    background-image: url(imagenes/beef-g7b5d65d76_1280.png);
     background-size: cover;
-    background-position: left;
+    background-position: left;*/
+    /*display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "h1nos"
+    "secnos";*/
 }
 
 .h1nos{
@@ -278,14 +283,39 @@ footer{
     font-family: 'Times New Roman', Times, serif;
 }
 
+.card1nos{
+    padding-top: 40px;
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "img1n carddesc1n img2n"
+    "img1n carddesc1n img2n";
+    grid-gap: 20px;
+}
+
 .img1n{
-    float: left;
+    /*float: left;*/
     margin-right: 10px;
     margin-left: 10px;
+    grid-area: img1n;
+    background-image: url(imagenes/sobre\ nosotros2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img2n{
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-area: img2n;
+    background-image: url(imagenes/img.nos2.webp);
+    /*background-size: cover;
+    background-position: center;*/
 }
 
 .carddesc1n{
-    text-align: left;
+    /*text-align: left;*/
+    grid-area: carddesc1n;
 }
 
 .redesn{
