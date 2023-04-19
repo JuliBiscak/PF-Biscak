@@ -16,7 +16,8 @@ header{
 }
 
 .logo{
-    float: left;
+    display: flex;
+    flex-direction: row;
     font-weight: bold;
     color: black;
 }
@@ -26,7 +27,8 @@ color: black;
 }
 
 .barra{
-    float: right;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .barra li{
@@ -46,8 +48,8 @@ color: black;
 main{
     height: calc(100vh - 90px);
     width: 100%;
-    background-color: #000;
-    background-image: url(imagenes/beef-g7b5d65d76_1280.png);
+    background-color: rgb(211, 200, 105);
+    /*background-image: url(imagenes/beef-g7b5d65d76_1280.png);*/
     background-size: cover;
     background-position: left;
 }
@@ -123,7 +125,8 @@ footer{
 }
 
 .prodc{
-    float: right;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .prodc li{
@@ -141,7 +144,8 @@ footer{
 }
 
 .logoprodc{
-    float: left;
+    display: flex;
+    flex-direction: row;
     font-weight: bold;
     color: black;
 }
@@ -149,8 +153,8 @@ footer{
 .mainprodc{
     height: calc(100vh - 90px);
     width: 100%;
-    background-color: #000;
-    background-image: url(imagenes/beef-g7b5d65d76_1280.png);
+    /*background-color: #000;*/
+    /*background-image: url(imagenes/beef-g7b5d65d76_1280.png);*/
     background-size: cover;
     background-position: left;
 }
@@ -233,7 +237,8 @@ footer{
 }
 
 .nos{
-    float: right;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .nos li{
@@ -251,7 +256,8 @@ footer{
 }
 
 .logonos{
-    float: left;
+    display: flex;
+    flex-direction: row;
     font-weight: bold;
     color: black;
 }
@@ -259,8 +265,8 @@ footer{
 .mainnos{
     height: calc(100vh - 90px);
     width: 100%;
-    background-color: #000;
-    background-image: url(imagenes/beef-g7b5d65d76_1280.png);
+    /*background-color: #000;
+    background-image: url(imagenes/beef-g7b5d65d76_1280.png);*/
     background-size: cover;
     background-position: left;
 }
@@ -303,7 +309,8 @@ footer{
 }
 
 .con{
-    float: right;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .con li{
@@ -321,7 +328,8 @@ footer{
 }
 
 .logocon{
-    float: left;
+    display: flex;
+    flex-direction: row;
     font-weight: bold;
     color: black;
 }
@@ -329,8 +337,8 @@ footer{
 .maincon{
     height: calc(100vh - 90px);
     width: 100%;
-    background-color: #000;
-    background-image: url(imagenes/beef-g7b5d65d76_1280.png);
+    /*background-color: #000;
+    background-image: url(imagenes/beef-g7b5d65d76_1280.png);*/
     background-size: cover;
     background-position: left;
 }
@@ -394,7 +402,8 @@ footer{
 }
 
 .ubi{
-    float: right;
+    display: flex;
+    flex-direction: row-reverse;
 }
 
 .ubi li{
@@ -412,7 +421,8 @@ footer{
 }
 
 .logoubi{
-    float: left;
+    display: flex;
+    flex-direction: row;
     font-weight: bold;
     color: black;
 }
@@ -420,10 +430,12 @@ footer{
 .mainubi{
     height: calc(100vh - 90px);
     width: 100%;
-    background-color: #000;
-    background-image: url(imagenes/beef-g7b5d65d76_1280.png);
+    /*background-color: rgb(255, 245, 154);*/
+    /*background-image: url(imagenes/beef-g7b5d65d76_1280.png);*/
     background-size: cover;
     background-position: left;
+    display: flex;
+    flex-direction: column;
 }
 
 .h1ubi{
