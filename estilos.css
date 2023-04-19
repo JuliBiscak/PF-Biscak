@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+header{
+    background-color: rgb(182, 174, 101);
+    width: 100%;
+    height: 90px;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    padding: 20px;
+    
+}
+
+.logo{
+    float: left;
+    font-weight: bold;
+    color: black;
+}
+
+.logo span{
+color: black;
+}
+
+.barra{
+    float: right;
+}
+
+.barra li{
+    list-style: none;
+    display: inline-block;
+}
+
+.barra a{
+    text-decoration: none;
+    color: white;
+}
+
+.barra a:hover{
+    color: grey;
+}
+
+main{
+    height: calc(100vh - 90px);
+    width: 100%;
+    background-color: #000;
+    background-image: url(imagenes/beef-g7b5d65d76_1280.png);
+    background-size: cover;
+    background-position: left;
+}
+
+.call{
+    width: 65%;
+    border: 5px solid rgb(182, 174, 101); border-top-style: hidden;
+    padding: 15px;
+}
+
+.team{
+    text-align: left;
+}
+
+.card{
+    height: 200px;
+    width: 28%;
+    border: 3px solid rgb(182, 174, 101);
+    text-align: center;
+}
+
+.card1{
+    float: right;
+    margin-right: 80px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card-desc a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.card2{
+    float: left;
+    margin-left: 80px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card-desc2 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+footer{
+    background-color: rgb(182, 174, 101);
+    width: 100%;
+    height: 90px;
+    padding: 20px;
+}
+
+.redes{
+    text-align: center;
+}
+
+.redes a{
+    color: #000;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.headerprodc{
+    background-color: rgb(182, 174, 101);
+    width: 100%;
+    height: 90px;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    padding: 20px;
+}
+
+.prodc{
+    float: right;
+}
+
+.prodc li{
+    list-style: none;
+    display: inline-block;
+}
+
+.prodc a{
+    text-decoration: none;
+    color: white;
+}
+
+.prodc a:hover{
+    color: grey;
+}
+
+.logoprodc{
+    float: left;
+    font-weight: bold;
+    color: black;
+}
+
+.mainprodc{
+    height: calc(100vh - 90px);
+    width: 100%;
+    background-color: #000;
+    background-image: url(imagenes/beef-g7b5d65d76_1280.png);
+    background-size: cover;
+    background-position: left;
+}
+
+.h1prodc{
+    text-align: left;
+    padding: 20px 20px 80px 20px;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.cardp{
+    float: right;
+    margin-right: 80px;
+    text-align: center;
+}
+
+.cardp a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.cardp2{
+    float: left;
+    margin-left: 80px;
+    text-align: center;
+}
+
+.cardp2 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.cardp3{
+    float: right;
+    margin-right: 80px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cardp3 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.cardp4{
+    float: left;
+    margin-left: 80px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.cardp4 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.redesp{
+    text-align: center;
+}
+
+.redesp a{
+    color: #000;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.headernos{
+    background-color: rgb(182, 174, 101);
+    width: 100%;
+    height: 90px;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    padding: 20px;
+}
+
+.nos{
+    float: right;
+}
+
+.nos li{
+    list-style: none;
+    display: inline-block;
+}
+
+.nos a{
+    text-decoration: none;
+    color: white;
+}
+
+.nos a:hover{
+    color: grey;
+}
+
+.logonos{
+    float: left;
+    font-weight: bold;
+    color: black;
+}
+
+.mainnos{
+    height: calc(100vh - 90px);
+    width: 100%;
+    background-color: #000;
+    background-image: url(imagenes/beef-g7b5d65d76_1280.png);
+    background-size: cover;
+    background-position: left;
+}
+
+.h1nos{
+    text-align: left;
+    padding: 20px 20px 80px 20px;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.img1n{
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.carddesc1n{
+    text-align: left;
+}
+
+.redesn{
+    text-align: center;
+}
+
+.redesn a{
+    color: #000;
+    text-decoration: none;
+    font-size: 25px;  
+}
+
+.headercon{
+    background-color: rgb(182, 174, 101);
+    width: 100%;
+    height: 90px;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    padding: 20px;
+}
+
+.con{
+    float: right;
+}
+
+.con li{
+    list-style: none;
+    display: inline-block;
+}
+
+.con a{
+    text-decoration: none;
+    color: white;
+}
+
+.con a:hover{
+    color: grey;
+}
+
+.logocon{
+    float: left;
+    font-weight: bold;
+    color: black;
+}
+
+.maincon{
+    height: calc(100vh - 90px);
+    width: 100%;
+    background-color: #000;
+    background-image: url(imagenes/beef-g7b5d65d76_1280.png);
+    background-size: cover;
+    background-position: left;
+}
+
+.h1con{
+    text-align: left;
+    padding: 20px 20px 80px 20px;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.h3con{
+    padding-left: 30px;
+    padding-bottom: 15px;
+    text-decoration: underline;
+}
+
+.licon1{
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.h3con2{
+    padding-left: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-decoration: underline;
+}
+
+.licon2{
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.h3con3{
+    padding-left: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-decoration: underline;
+}
+
+.licon3{
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.divcon{
+    float: right;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.headerubi{
+    background-color: rgb(182, 174, 101);
+    width: 100%;
+    height: 90px;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    padding: 20px;
+}
+
+.ubi{
+    float: right;
+}
+
+.ubi li{
+    list-style: none;
+    display: inline-block;
+}
+
+.ubi a{
+    text-decoration: none;
+    color: white;
+}
+
+.ubi a:hover{
+    color: grey;
+}
+
+.logoubi{
+    float: left;
+    font-weight: bold;
+    color: black;
+}
+
+.mainubi{
+    height: calc(100vh - 90px);
+    width: 100%;
+    background-color: #000;
+    background-image: url(imagenes/beef-g7b5d65d76_1280.png);
+    background-size: cover;
+    background-position: left;
+}
+
+.h1ubi{
+    text-align: left;
+    padding: 20px 20px 80px 20px;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.h3ubi{
+    text-align: left;
+    padding: 30px;
+}
+
+.liubi1{
+    padding-left: 30px;
+}
+
+.iframe{
+    padding-top: 50px;
+}
