@@ -624,14 +624,18 @@ footer{
 @media screen and (max-width: 480px){
     .h1ubi{
         padding-bottom: 10px;
+        font-size: 35px;
+        text-align: center;
     }
 
-    .ubi{
-        font-size: 16px;
+    .h3ubi{
+        font-size: 28px;
+        text-align: left;
+        padding-bottom: 12px;
     }
 
-    .spanubi{
-        font-size: 20px;
+    .liubi1{
+        padding-bottom: 12px;
     }
 
     .redesn{
@@ -644,6 +648,11 @@ footer{
 
     .h1index{
         font-size: 24px;
+    }
+
+    .iframe{
+        width: 100%;
+        padding-top: 27px;
     }
 
     .jumbotron{
