@@ -6,7 +6,7 @@
 }
 
 
-header{
+/*header{
     background-color: rgb(182, 174, 101);
     width: 100%;
     height: 90px;
@@ -15,6 +15,22 @@ header{
     text-transform: capitalize;
     padding: 20px;
     
+}*/
+
+.navbar{
+    background-color: rgb(182, 174, 101);
+}
+
+.superhome{
+    color: #000;
+    font-weight: bold;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 25px;
+}
+
+.nav-item{
+    font-size: 20px;
 }
 
 .logo{
@@ -99,12 +115,14 @@ main{
     padding: 0;
 }
 
-
+.h3general{
+    font-size: 22px;
+}
 
 footer{
     background-color: rgb(182, 174, 101);
     width: 100%;
-    height: 90px;
+    height: auto;
     padding: 20px;
 }
 
@@ -115,10 +133,10 @@ footer{
 .redes a{
     color: #000;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 20px;
 }
 
-.headerprodc{
+/*.headerprodc{
     background-color: rgb(182, 174, 101);
     width: 100%;
     height: 90px;
@@ -126,7 +144,7 @@ footer{
     font-family: 'Times New Roman', Times, serif;
     text-transform: capitalize;
     padding: 20px;
-}
+}*/
 
 .prodc{
     display: flex;
@@ -407,7 +425,7 @@ footer{
     font-size: 25px;  
 }
 
-.headercon{
+/*.headercon{
     background-color: rgb(182, 174, 101);
     width: 100%;
     height: 90px;
@@ -415,7 +433,7 @@ footer{
     font-family: 'Times New Roman', Times, serif;
     text-transform: capitalize;
     padding: 20px;
-}
+}*/
 
 .con{
     display: flex;
@@ -444,7 +462,7 @@ footer{
 }
 
 .maincon{
-    height: calc(100vh - 90px);
+    height: auto;
     width: 100%;
     /*background-color: #000;
     background-image: url(imagenes/beef-g7b5d65d76_1280.png);*/
