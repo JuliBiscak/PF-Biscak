@@ -1,0 +1,602 @@
+$font1: 'Times New Roman', Times, serif;
+$navcolor: rgb(182, 174, 101);
+$maincolor: rgb(211, 200, 105);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font1;
+}
+
+
+.navbar{
+    background-color: $navcolor;
+}
+
+.superhome{
+    color: #000;
+    font-weight: bold;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-size: 25px;
+}
+
+.nav-item{
+    font-size: 20px;
+}
+
+
+
+main{
+    height: auto;
+    width: 100%;
+    background-color: $maincolor;
+}
+
+.jumbotron{
+    height: 300px;
+    background-image: url(imagenes/sobre\ nosotros2.jpg);
+    background-size: cover;
+    background-position: left;
+    margin-bottom: 0;
+}
+
+.minigaleria{
+    width: 50%;
+    height: 200px;
+}
+
+.parte1{
+    display: flex;
+    flex-direction: row;
+}
+
+.parte2{
+    display: flex;
+    flex-direction: row;
+}
+
+.h1index{
+    font-weight: bold;
+}
+
+@media screen and (min-width: 481px){
+    .imgindex{
+    width: 30%;
+    height: 300px;
+}
+
+}
+.pindex{
+    padding: 30px;
+}
+
+.divindex{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+}
+
+.call{
+    width: 65%;
+    border: 5px solid rgb(182, 174, 101); border-top-style: hidden;
+    padding: 15px;
+}
+
+.team{
+    text-align: left;
+    padding-bottom: 35px;
+
+    .card{
+        height: 200px;
+        width: 20%;
+        text-align: center;
+    }
+}
+
+
+
+
+footer{
+    background-color: $navcolor;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+
+    .h3general{
+        font-size: 22px;
+    }
+
+    .redes{
+        text-align: center;
+
+        a{
+            color: #000;
+            text-decoration: none;
+            font-size: 25px;
+        }
+    }
+}
+
+.mainprodc{
+    height: auto;
+    width: 100%;
+}
+
+.h1prodc{
+    text-align: left;
+    padding: 20px 20px 80px 20px;
+    text-decoration: underline;
+    font-family: $font1;
+}
+
+
+.cardp a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.cardp2 a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.cardp3 a{
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.cardp4 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.cardp5 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.cardp6 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.team{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "cardp cardp3 cardp5"
+    "cardp2 cardp4 cardp6";
+    grid-gap: 20px;
+    background-color: $maincolor;
+}
+
+.cardp{
+    grid-area: cardp;
+    background-size: cover;
+    background-position: center;
+    margin-left: 120px;
+    text-align: start;
+    background-color: $maincolor;
+    border: none;
+}
+
+.cardp2{
+    grid-area: cardp2;
+    background-size: cover;
+    background-position: center;
+    margin-left: 120px;
+    text-align: start;
+    background-color: $maincolor;
+    border: none;
+}
+
+.cardp3{
+    grid-area: cardp3;
+    background-size: cover;
+    background-position: center;
+    text-align: start;
+    background-color: $maincolor;
+    border: none;
+}
+
+.cardp4{
+    grid-area: cardp4;
+    background-size: cover;
+    background-position: center;
+    text-align: start;
+    background-color: $maincolor;
+    border: none;
+}
+
+.cardp5{
+    grid-area: cardp5;
+    background-size: cover;
+    background-position: center;
+    text-align: start;
+    background-color: $maincolor;
+    border: none;
+}
+
+.cardp6{
+    grid-area: cardp6;
+    background-size: cover;
+    background-position: center;
+    text-align: start;
+    background-color: $maincolor;
+    border: none;
+}
+
+
+.redesp{
+    text-align: center;
+    
+}
+
+.redesp a{
+    color: #000;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+
+.nos{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.nos li{
+    list-style: none;
+    display: inline-block;
+}
+
+.nos a{
+    text-decoration: none;
+    color: white;
+}
+
+.nos a:hover{
+    color: grey;
+}
+
+.logonos{
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    color: black;
+}
+
+.mainnos{
+    height: calc(100vh - 90px);
+    width: 100%;
+    /*background-color: #000;
+    background-image: url(imagenes/beef-g7b5d65d76_1280.png);
+    background-size: cover;
+    background-position: left;*/
+    /*display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "h1nos"
+    "secnos";*/
+}
+
+.h1nos{
+    text-align: left;
+    padding: 20px 20px 80px 20px;
+    text-decoration: underline;
+    font-family: $font1;
+}
+
+.card1nos{
+    padding-top: 40px;
+    padding-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "img1n carddesc1n img2n"
+    "img1n carddesc1n img2n";
+    grid-gap: 20px;
+}
+
+.img1n{
+    /*float: left;*/
+    margin-right: 10px;
+    margin-left: 10px;
+    grid-area: img1n;
+    background-image: url(imagenes/sobre\ nosotros2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.img2n{
+    margin-left: 10px;
+    margin-right: 10px;
+    grid-area: img2n;
+    background-image: url(imagenes/img.nos2.webp);
+    /*background-size: cover;
+    background-position: center;*/
+}
+
+.carddesc1n{
+    /*text-align: left;*/
+    grid-area: carddesc1n;
+}
+
+.redesn{
+    text-align: center;
+}
+
+.redesn a{
+    color: #000;
+    text-decoration: none;
+    font-size: 25px;  
+}
+
+/*.headercon{
+    background-color: rgb(182, 174, 101);
+    width: 100%;
+    height: 90px;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    padding: 20px;
+}*/
+
+.con{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.con li{
+    list-style: none;
+    display: inline-block;
+}
+
+.con a{
+    text-decoration: none;
+    color: white;
+}
+
+.con a:hover{
+    color: grey;
+}
+
+.logocon{
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    color: black;
+}
+
+.maincon{
+    height: auto;
+    width: 100%;
+    /*background-color: #000;
+    background-image: url(imagenes/beef-g7b5d65d76_1280.png);*/
+    background-size: cover;
+    background-position: left;
+}
+
+.h1con{
+    text-align: left;
+    padding: 20px 20px 60px 20px;
+    text-decoration: underline;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.pruebalistadiv{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.listascon{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.h3con{
+    padding-left: 30px;
+    padding-bottom: 15px;
+    text-decoration: underline;
+}
+
+.licon1{
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.h3con2{
+    padding-left: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-decoration: underline;
+}
+
+.licon2{
+    padding-left: 20px;
+    font-size: 14px;
+}
+
+.h3con3{
+    padding-left: 30px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    text-decoration: underline;
+}
+
+.licon3{
+    padding-left: 20px;
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+.divcon{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.headerubi{
+    background-color: $navcolor;
+    width: 100%;
+    height: 90px;
+    font-size: 22px;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    padding: 20px;
+}
+
+.ubi{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.ubi li{
+    list-style: none;
+    display: inline-block;
+}
+
+.ubi a{
+    text-decoration: none;
+    color: white;
+}
+
+.ubi a:hover{
+    color: grey;
+}
+
+.logoubi{
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    color: black;
+}
+
+.mainubi{
+    height: calc(100vh - 90px);
+    width: 100%;
+    /*background-color: rgb(255, 245, 154);*/
+    /*background-image: url(imagenes/beef-g7b5d65d76_1280.png);*/
+    background-size: cover;
+    background-position: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.h1ubi{
+    text-align: left;
+    padding: 20px 20px 80px 20px;
+    text-decoration: underline;
+    font-family: $font1;
+}
+
+.h3ubi{
+    text-align: left;
+    padding: 30px;
+}
+
+.liubi1{
+    padding-left: 30px;
+}
+
+.iframe{
+    padding-top: 50px;
+}
+
+@media screen and (max-width: 360px){
+    .h1ubi{
+        padding-bottom: 10px;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .h3ubi{
+        font-size: 28px;
+        text-align: left;
+        padding-bottom: 12px;
+    }
+
+    .liubi1{
+        padding-bottom: 12px;
+    }
+
+    .redesn{
+        font-size: 40px;
+    }
+
+    .nav-item{
+        font-size: 18px;
+    }
+
+    .h1index{
+        font-size: 24px;
+    }
+
+    .iframe{
+        width: 100%;
+        padding-top: 27px;
+    }
+
+    .jumbotron{
+        height: 150px;
+        background-image: url(imagenes/sobre\ nosotros2.jpg);
+        background-size: cover;
+        background-position: left;
+        margin-bottom: 0;
+    }
+
+    .pindex{
+        margin: 0;
+        padding: 20px;
+    }
+
+    .divindex{
+        display: flex;
+        flex-direction: column;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .imgindex{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .pindex2{
+        padding: 10px;
+    }
+
+    .mainindex{
+        height: auto;
+    }
+
+    footer{
+        padding: 10px;
+    }
+
+    .h3general{
+        font-size: 30px;
+    }
+
+    .redes a{
+        color: #000;
+        text-decoration: none;
+        font-size: 30px;
+    }
+}
