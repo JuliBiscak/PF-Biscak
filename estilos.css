@@ -240,21 +240,51 @@ footer .redes a {
 .nosotros1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(1, 1fr);
-  grid-template-areas: "carddesc1n img2n";
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "carddesc1n img2n" "carddesc1n img2n";
 }
 
 .carddesc1n {
   grid-area: carddesc1n;
+  padding-left: 20px;
+}
+.carddesc1n .nuestrahistoria {
+  text-decoration: underline;
+  text-align: center;
+  padding-bottom: 20px;
 }
 
 .img2n {
   grid-area: img2n;
-  background-image: url(imagenes/img.nos2.webp);
-  background-position: center;
-  background-size: cover;
-  height: 200px;
-  width: 300px;
+  padding-left: 100px;
+  background-position-x: center;
+}
+
+.nosotros2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-areas: "img1n carddesc2n";
+}
+
+.carddesc2n {
+  grid-area: carddesc2n;
+  padding-right: 20px;
+}
+.carddesc2n .dondeencontrarnos {
+  text-decoration: underline;
+  text-align: center;
+  padding-top: 20px;
+}
+.carddesc2n a {
+  text-decoration: none;
+  color: #000;
+  text-align: center;
+}
+
+.img1n {
+  grid-area: img1n;
+  padding-left: 100px;
 }
 
 .redesn {
