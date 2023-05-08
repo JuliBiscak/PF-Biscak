@@ -86,7 +86,11 @@ main{
 }
 
 
-
+.h4index{
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 30px;
+}
 
 
 footer{
@@ -146,6 +150,7 @@ footer{
     background-color: rgb(0, 0, 0);
     text-align: center;
     border: #000 solid;
+    cursor: pointer;
 
     a{
         text-decoration: underline;
@@ -155,6 +160,34 @@ footer{
     h5{
         text-decoration: solid;
     }
+}
+
+#cardp{
+    transition: height 0.5s;
+}
+
+#cardp:hover{
+    height: 220px;
+}
+
+#cardp2{
+    @extend #cardp;
+}
+
+#cardp3{
+    @extend #cardp;
+}
+
+#cardp4{
+    @extend #cardp;
+}
+
+#cardp5{
+    @extend #cardp;
+}
+
+#cardp6{
+    @extend #cardp;
 }
 
 .desc{
@@ -221,40 +254,6 @@ footer{
     text-decoration: underline;
     font-family: $font1;
 }
-
-
-/*
-.card1nos{
-    padding-top: 40px;
-    padding-bottom: 60px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "img1n carddesc1n img2n"
-    "img1n carddesc1n img2n";
-    grid-gap: 20px;
-}
-
-.img1n{
-    margin-right: 10px;
-    margin-left: 10px;
-    grid-area: img1n;
-    background-image: url(imagenes/sobre\ nosotros2.jpg);
-    background-size: cover;
-    background-position: center;
-}
-
-.img2n{
-    margin-left: 10px;
-    margin-right: 10px;
-    grid-area: img2n;
-    background-image: url(imagenes/img.nos2.webp);
-}
-
-.carddesc1n{
-    grid-area: carddesc1n;
-}
-*/
 
 .nosotros1{
     display: grid;
@@ -415,6 +414,16 @@ footer{
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 10px;
+    font-size: $font1;
+}
+
+input:focus{
+    font-size: 17px;
+}
+
+input::placeholder{
+    color: black;
+    text-align: center;
 }
 
 .headerubi{
@@ -485,6 +494,16 @@ footer{
 }
 
 @media screen and (max-width: 360px){
+    .navbar{
+        background-color: $navcolor;
+    }
+    
+    main{
+        background-color: $maincolor;
+        height: auto;
+        width: 100%;
+    }
+
     .h1ubi{
         padding-bottom: 10px;
         font-size: 35px;
@@ -508,7 +527,7 @@ footer{
     .nav-item{
         font-size: 18px;
     }
-
+    /*MAIN*/
     .h1index{
         font-size: 24px;
     }
@@ -524,6 +543,21 @@ footer{
         background-size: cover;
         background-position: left;
         margin-bottom: 0;
+    }
+
+    .minigaleria{
+        width: 50%;
+        height: 100px;
+    }
+
+    .parte1{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .parte2{
+        display: flex;
+        flex-direction: row;
     }
 
     .pindex{
@@ -547,12 +581,248 @@ footer{
         padding: 10px;
     }
 
-    .mainindex{
-        height: auto;
+    .h4index{
+        text-align: center;
+        text-decoration: underline;
+        padding-bottom: 30px;
     }
 
+    /*FIN MAIN*/
+
+    /*PRODUCTOS*/
+
+    .h1prodc{
+        text-align: center;
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+
+    .team1{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-bottom: 25px;
+    }
+
+    .team2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-bottom: 35px;
+    }
+
+    .card{
+        height: 200px;
+        width: 205px;
+        background-color: #000;
+        text-align: center;
+        border: #000 solid;
+        cursor: pointer;
+
+        a{
+            text-decoration: underline;
+            color: rgb(170, 159, 60);
+        }
+
+        h5{
+            text-decoration: solid;
+        }
+    }
+
+    #cardp{
+        transition: height 0.5s;
+    }
+
+    #cardp:hover{
+        height: 220px;
+    }
+
+    #cardp2{
+        @extend #cardp;
+    }
+
+    #cardp3{
+        @extend #cardp;
+    }
+
+    #cardp4{
+        @extend #cardp;
+    }
+
+    #cardp5{
+        @extend #cardp;
+    }
+
+    #cardp6{
+        @extend #cardp;
+    }
+
+    .desc{
+        color: rgb(170, 159, 60);
+    }
+
+    /*MAS PEDIDAS*/
+
+    .maspedidas h4{
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .para{
+        padding-left: 10px;
+        height: 50px;
+        color: rgb(170, 159, 60);
+        background-color: #000;
+        border: 1px solid white;
+    }
+
+    .maspedidas3{
+        padding-bottom: 0;
+    }
+
+    @for $incremento1 from 1 through 2 {
+        .todos-#{$incremento1} {
+            width: 100px * $incremento1;
+        }
+    }
+
+    @for $incremento2 from 1 through 2 {
+        .todoss-#{$incremento2} {
+            width: 170px * $incremento2;
+        }
+    }
+
+    @for $incremento3 from 1 through 2 {
+        .todosss-#{$incremento3} {
+            width: 140px * $incremento3;
+        }
+    }
+
+    /*FIN MAS PEDIDAS*/
+    /*FIN PRODUCTOS*/
+
+    /*NOSOTROS*/
+    .h1nos{
+        text-align: center;
+        padding: 20px;
+        padding-bottom: 40px;
+    }
+
+    .nosotros1{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .carddesc1n{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .img2n{
+        padding-left: 20px;
+    }
+
+    .nosotros2{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .carddesc2n{
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+
+        a{
+            text-decoration: underline;
+        }
+    }
+
+    .img1n{
+        padding-left: 25px;
+    }
+
+    /*FIN NOSOTROS*/
+    /*CONTACTO*/
+    .h1con{
+        text-align: center;
+        text-decoration: underline;
+        padding: 20px;
+    }
+
+    .pruebalistadiv{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .listascon{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .h3con{
+        padding-left: 30px;
+        padding-bottom: 15px;
+        text-decoration: underline;
+    }
+
+    .licon1{
+        padding-left: 20px;
+        font-size: 14px;
+    }
+
+    .h3con2{
+        padding-left: 30px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        text-decoration: underline;
+    }
+
+    .licon2{
+        padding-left: 20px;
+        font-size: 14px;
+    }
+
+    .h3con{
+        padding-left: 30px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        text-decoration: underline;
+    }
+
+    .licon3{
+        padding-left: 20px;
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+
+    .divcon{
+        font-size: $font1;
+    }
+
+    .input:focus{
+        font-size: 17px;
+    }
+
+    .input::placeholder{
+        color: #000;
+        text-align: center;
+    }
+
+    textarea{
+        width: 230px;
+    }
+
+
+    /*FIN CONTACTO*/
+
+
+    /*FOOTER*/
     footer{
+        background-color: $navcolor;
         padding: 10px;
+        width: 100%;
+        height: auto;
     }
 
     .h3general{
