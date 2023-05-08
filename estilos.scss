@@ -85,16 +85,6 @@ main{
     padding: 15px;
 }
 
-.team{
-    text-align: left;
-    padding-bottom: 35px;
-
-    .card{
-        height: 200px;
-        width: 20%;
-        text-align: center;
-    }
-}
 
 
 
@@ -132,116 +122,87 @@ footer{
     font-family: $font1;
 }
 
+/*HAMBURGUESAS*/
 
-.cardp a{
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    font-size: 15px;
+.team1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: left;
+    padding-bottom: 35px;
 }
 
-.cardp2 a{
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    font-size: 15px;
+.team2{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: left;
+    padding-bottom: 35px;
 }
 
-.cardp3 a{
-    text-decoration: none;
-    color: #000;
-    font-weight: bold;
-    font-size: 15px;
+.card{
+    height: 200px;
+    width: 205px;
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    border: #000 solid;
+
+    a{
+        text-decoration: underline;
+        color: rgb(170, 159, 60);
+    }
+
+    h5{
+        text-decoration: solid;
+    }
 }
 
-.cardp4 a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 15px;
+.desc{
+    color: rgb(170, 159, 60);
 }
 
-.cardp5 a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 15px;
+/*HAMBURGUESAS FIN*/
+
+/* LAS MAS PEDIDAS*/
+
+.maspedidas{
+
+    h4{
+        padding-left: 20px;
+        text-decoration: underline;
+    }
 }
 
-.cardp6 a{
-    text-decoration: none;
-    color: black;
-    font-weight: bold;
-    font-size: 15px;
+.para{
+    padding-left: 10px;
+    height: 50px;
+    color: rgb(170, 159, 60);
+    background-color: #000;
+    border: 1px solid white;
 }
 
-.team{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "cardp cardp3 cardp5"
-    "cardp2 cardp4 cardp6";
-    grid-gap: 20px;
-    background-color: $maincolor;
+.maspedidas3{
+    padding-bottom: 5px;
 }
 
-.cardp{
-    grid-area: cardp;
-    background-size: cover;
-    background-position: center;
-    margin-left: 120px;
-    text-align: start;
-    background-color: $maincolor;
-    border: none;
+@for $incremento1 from 1 through 2 {
+    .todos-#{$incremento1} {
+        width: 170px * $incremento1;
+    }
 }
 
-.cardp2{
-    grid-area: cardp2;
-    background-size: cover;
-    background-position: center;
-    margin-left: 120px;
-    text-align: start;
-    background-color: $maincolor;
-    border: none;
+@for $incremento2 from 1 through 2 {
+    .todoss-#{$incremento2} {
+        width: 230px * $incremento2;
+    }
 }
 
-.cardp3{
-    grid-area: cardp3;
-    background-size: cover;
-    background-position: center;
-    text-align: start;
-    background-color: $maincolor;
-    border: none;
+@for $incremento3 from 1 through 2 {
+    .todosss-#{$incremento3} {
+        width: 200px * $incremento3;
+    }
 }
-
-.cardp4{
-    grid-area: cardp4;
-    background-size: cover;
-    background-position: center;
-    text-align: start;
-    background-color: $maincolor;
-    border: none;
-}
-
-.cardp5{
-    grid-area: cardp5;
-    background-size: cover;
-    background-position: center;
-    text-align: start;
-    background-color: $maincolor;
-    border: none;
-}
-
-.cardp6{
-    grid-area: cardp6;
-    background-size: cover;
-    background-position: center;
-    text-align: start;
-    background-color: $maincolor;
-    border: none;
-}
-
-
+/* LAS MAS PEDIDAS FIN*/
 .redesp{
     text-align: center;
     
@@ -254,46 +215,6 @@ footer{
 }
 
 
-.nos{
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.nos li{
-    list-style: none;
-    display: inline-block;
-}
-
-.nos a{
-    text-decoration: none;
-    color: white;
-}
-
-.nos a:hover{
-    color: grey;
-}
-
-.logonos{
-    display: flex;
-    flex-direction: row;
-    font-weight: bold;
-    color: black;
-}
-
-.mainnos{
-    height: calc(100vh - 90px);
-    width: 100%;
-    /*background-color: #000;
-    background-image: url(imagenes/beef-g7b5d65d76_1280.png);
-    background-size: cover;
-    background-position: left;*/
-    /*display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas: "h1nos"
-    "secnos";*/
-}
-
 .h1nos{
     text-align: left;
     padding: 20px 20px 80px 20px;
@@ -301,6 +222,8 @@ footer{
     font-family: $font1;
 }
 
+
+/*
 .card1nos{
     padding-top: 40px;
     padding-bottom: 60px;
@@ -313,7 +236,6 @@ footer{
 }
 
 .img1n{
-    /*float: left;*/
     margin-right: 10px;
     margin-left: 10px;
     grid-area: img1n;
@@ -327,13 +249,31 @@ footer{
     margin-right: 10px;
     grid-area: img2n;
     background-image: url(imagenes/img.nos2.webp);
-    /*background-size: cover;
-    background-position: center;*/
 }
 
 .carddesc1n{
-    /*text-align: left;*/
     grid-area: carddesc1n;
+}
+*/
+
+.nosotros1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: "carddesc1n img2n";
+}
+
+.carddesc1n{
+    grid-area: carddesc1n;
+}
+
+.img2n{
+    grid-area: img2n;
+    background-image: url(imagenes/img.nos2.webp);
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 300px;
 }
 
 .redesn{
@@ -346,15 +286,6 @@ footer{
     font-size: 25px;  
 }
 
-/*.headercon{
-    background-color: rgb(182, 174, 101);
-    width: 100%;
-    height: 90px;
-    font-size: 22px;
-    font-family: 'Times New Roman', Times, serif;
-    text-transform: capitalize;
-    padding: 20px;
-}*/
 
 .con{
     display: flex;
