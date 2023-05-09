@@ -106,13 +106,28 @@ footer .redes a {
   width: 100%;
 }
 
-.h1prodc {
-  text-align: left;
+.h1prodc, .h1ubi, .h1con, .h1nos {
+  text-align: center;
   padding: 20px 20px 80px 20px;
-  text-decoration: underline;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+  text-shadow: 5px 5px 5px black;
   font-family: "Times New Roman", Times, serif;
+  animation-name: animacion;
+  animation-iteration-count: infinite;
+  animation-delay: 3s;
+  animation-duration: 3s;
+  animation-direction: alternate;
 }
 
+@keyframes animacion {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 /*HAMBURGUESAS*/
 .team1 {
   display: flex;
@@ -213,13 +228,6 @@ footer .redes a {
   font-size: 25px;
 }
 
-.h1nos {
-  text-align: left;
-  padding: 20px 20px 80px 20px;
-  text-decoration: underline;
-  font-family: "Times New Roman", Times, serif;
-}
-
 .nosotros1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -313,13 +321,6 @@ footer .redes a {
   background-image: url(imagenes/beef-g7b5d65d76_1280.png);*/
   background-size: cover;
   background-position: left;
-}
-
-.h1con {
-  text-align: left;
-  padding: 20px 20px 60px 20px;
-  text-decoration: underline;
-  font-family: "Times New Roman", Times, serif;
 }
 
 .pruebalistadiv {
@@ -437,13 +438,6 @@ input::placeholder {
   flex-direction: column;
 }
 
-.h1ubi {
-  text-align: left;
-  padding: 20px 20px 80px 20px;
-  text-decoration: underline;
-  font-family: "Times New Roman", Times, serif;
-}
-
 .h3ubi {
   text-align: left;
   padding: 30px;
@@ -523,7 +517,7 @@ input::placeholder {
     margin: 0 auto;
   }
   .imgindex {
-    max-width: 100%;
+    max-width: 200px;
     height: auto;
   }
   .pindex2 {
@@ -536,7 +530,7 @@ input::placeholder {
   }
   /*FIN MAIN*/
   /*PRODUCTOS*/
-  .h1prodc {
+  .h1prodc, .h1nos, .h1con, .h1ubi {
     text-align: center;
     padding: 20px;
     padding-bottom: 40px;
@@ -544,14 +538,18 @@ input::placeholder {
   .team1 {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
     padding-bottom: 25px;
+    padding-left: 77px;
   }
   .team2 {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: column;
     justify-content: space-evenly;
     padding-bottom: 35px;
+    padding-left: 77px;
   }
   .card {
     height: 200px;

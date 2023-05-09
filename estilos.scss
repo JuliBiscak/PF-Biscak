@@ -120,10 +120,26 @@ footer{
 }
 
 .h1prodc{
-    text-align: left;
+    text-align: center;
     padding: 20px 20px 80px 20px;
-    text-decoration: underline;
+    text-decoration: solid;
+    text-shadow: 5px 5px 5px black;
     font-family: $font1;
+    animation-name: animacion;
+    animation-iteration-count: infinite;
+    animation-delay: 3s;
+    animation-duration: 3s;
+    animation-direction: alternate;
+}
+
+@keyframes animacion {
+    from{
+        opacity: 0;
+    }
+
+    to{
+        opacity: 1;
+    }
 }
 
 /*HAMBURGUESAS*/
@@ -249,10 +265,7 @@ footer{
 
 
 .h1nos{
-    text-align: left;
-    padding: 20px 20px 80px 20px;
-    text-decoration: underline;
-    font-family: $font1;
+    @extend .h1prodc
 }
 
 .nosotros1{
@@ -356,10 +369,7 @@ footer{
 }
 
 .h1con{
-    text-align: left;
-    padding: 20px 20px 60px 20px;
-    text-decoration: underline;
-    font-family: 'Times New Roman', Times, serif;
+    @extend .h1prodc
 }
 
 .pruebalistadiv{
@@ -474,10 +484,7 @@ input::placeholder{
 }
 
 .h1ubi{
-    text-align: left;
-    padding: 20px 20px 80px 20px;
-    text-decoration: underline;
-    font-family: $font1;
+    @extend .h1prodc
 }
 
 .h3ubi{
@@ -573,7 +580,7 @@ input::placeholder{
     }
 
     .imgindex{
-        max-width: 100%;
+        max-width: 200px;
         height: auto;
     }
 
@@ -600,15 +607,19 @@ input::placeholder{
     .team1{
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-evenly;
         padding-bottom: 25px;
+        padding-left: 77px;
     }
 
     .team2{
         display: flex;
         flex-wrap: wrap;
+        flex-direction: column;
         justify-content: space-evenly;
         padding-bottom: 35px;
+        padding-left: 77px;
     }
 
     .card{
