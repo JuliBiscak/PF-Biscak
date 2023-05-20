@@ -45,7 +45,12 @@ main{
 
 .minigaleria{
     width: 50%;
-    height: 200px;
+    height: 250px;
+    transition: filter 0.3s ease-in-out;
+}
+
+.minigaleria:hover{
+    filter: grayscale(100%);
 }
 
 .parte1{
@@ -60,6 +65,8 @@ main{
 
 .h1index{
     font-weight: bold;
+    text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 @media screen and (min-width: 481px){
@@ -79,6 +86,10 @@ main{
     padding: 30px;
 }
 
+.pindex2{
+    padding-left: 10px;
+}
+
 .call{
     width: 65%;
     border: 5px solid rgb(182, 174, 101); border-top-style: hidden;
@@ -90,6 +101,7 @@ main{
     text-align: center;
     text-decoration: underline;
     padding-bottom: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -124,7 +136,7 @@ footer{
     padding: 20px 20px 80px 20px;
     text-decoration: solid;
     text-shadow: 5px 5px 5px black;
-    font-family: $font1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     animation-name: animacion;
     animation-iteration-count: infinite;
     animation-delay: 3s;
@@ -219,6 +231,7 @@ footer{
     h4{
         padding-left: 20px;
         text-decoration: underline;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 }
 
@@ -284,6 +297,7 @@ footer{
         text-decoration: underline;
         text-align: center;
         padding-bottom: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 }
 
@@ -308,6 +322,7 @@ footer{
         text-decoration: underline;
         text-align: center;
         padding-top: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
     }
 
     a{
@@ -388,6 +403,7 @@ footer{
     padding-left: 30px;
     padding-bottom: 15px;
     text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .licon1{
@@ -400,6 +416,7 @@ footer{
     padding-bottom: 15px;
     padding-top: 15px;
     text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .licon2{
@@ -412,6 +429,7 @@ footer{
     padding-bottom: 15px;
     padding-top: 15px;
     text-decoration: underline;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .licon3{
@@ -434,16 +452,6 @@ input:focus{
 input::placeholder{
     color: black;
     text-align: center;
-}
-
-.headerubi{
-    background-color: $navcolor;
-    width: 100%;
-    height: 90px;
-    font-size: 22px;
-    font-family: 'Times New Roman', Times, serif;
-    text-transform: capitalize;
-    padding: 20px;
 }
 
 .ubi{
@@ -490,6 +498,8 @@ input::placeholder{
 .h3ubi{
     text-align: left;
     padding: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: underline;
 }
 
 .liubi1{
@@ -537,6 +547,8 @@ input::placeholder{
     /*MAIN*/
     .h1index{
         font-size: 24px;
+        text-shadow: 5px 5px 5px #000;
+        color: white;
     }
 
     .iframe{
@@ -822,6 +834,307 @@ input::placeholder{
 
     textarea{
         width: 230px;
+    }
+
+
+    /*FIN CONTACTO*/
+
+
+    /*FOOTER*/
+    footer{
+        background-color: $navcolor;
+        padding: 10px;
+        width: 100%;
+        height: auto;
+    }
+
+    .h3general{
+        font-size: 30px;
+    }
+
+    .redes a{
+        color: #000;
+        text-decoration: none;
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 480px) {
+    
+    .navbar{
+        background-color: $navcolor;
+    }
+    
+    main{
+        background-color: $maincolor;
+        height: auto;
+        width: 100%;
+    }
+
+    .h1ubi{
+        padding-bottom: 10px;
+        font-size: 35px;
+        text-align: center;
+    }
+
+    .h3ubi{
+        font-size: 28px;
+        text-align: left;
+        padding-bottom: 12px;
+    }
+
+    .liubi1{
+        padding-bottom: 12px;
+    }
+
+    .redesn{
+        font-size: 40px;
+    }
+
+    .nav-item{
+        font-size: 18px;
+    }
+    /*MAIN*/
+    .h1index{
+        font-size: 24px;
+        text-shadow: 5px 5px 5px #000;
+        color: white;
+    }
+
+    .iframe{
+        width: 100%;
+        padding-top: 27px;
+    }
+
+    .jumbotron{
+        height: 150px;
+        background-image: url(imagenes/sobre\ nosotros2.jpg);
+        background-size: cover;
+        background-position: left;
+        margin-bottom: 0;
+    }
+
+    .minigaleria{
+        width: 50%;
+        height: 100px;
+    }
+
+    .parte1{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .parte2{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .pindex{
+        margin: 0;
+        padding: 20px;
+    }
+
+    .divindex{
+        display: flex;
+        flex-direction: column;
+        max-width: 360px;
+        margin: 0 auto;
+    }
+
+    .imgindex{
+        max-width: 300px;
+        height: auto;
+    }
+
+    .pindex2{
+        padding: 10px;
+    }
+
+    .h4index{
+        text-align: center;
+        text-decoration: underline;
+        padding-bottom: 30px;
+    }
+
+    /*FIN MAIN*/
+
+        /*PRODUCTOS*/
+
+        .h1prodc{
+            text-align: center;
+            padding: 20px;
+            padding-bottom: 40px;
+        }
+
+        .team1{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding-bottom: 25px;
+            padding-left: 135px;
+        }
+    
+        .team2{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding-bottom: 35px;
+            padding-left: 135px;
+        }
+
+            /*MAS PEDIDAS*/
+
+    .maspedidas h4{
+        text-align: center;
+        text-decoration: underline;
+    }
+
+    .para{
+        padding-left: 10px;
+        height: 50px;
+        color: rgb(170, 159, 60);
+        background-color: #000;
+        border: 1px solid white;
+    }
+
+    .maspedidas3{
+        padding-bottom: 0;
+    }
+
+    @for $incremento1 from 1 through 2 {
+        .todos-#{$incremento1} {
+            width: 100px * $incremento1;
+        }
+    }
+
+    @for $incremento2 from 1 through 2 {
+        .todoss-#{$incremento2} {
+            width: 170px * $incremento2;
+        }
+    }
+
+    @for $incremento3 from 1 through 2 {
+        .todosss-#{$incremento3} {
+            width: 140px * $incremento3;
+        }
+    }
+
+    /*FIN MAS PEDIDAS*/
+    /*FIN PRODUCTOS*/
+
+        /*NOSOTROS*/
+        .h1nos{
+            text-align: center;
+            padding: 20px;
+            padding-bottom: 40px;
+        }
+    
+        .nosotros1{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        .carddesc1n{
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    
+        .img2n{
+            padding-left: 90px;
+        }
+    
+        .nosotros2{
+            display: flex;
+            flex-wrap: wrap;
+        }
+    
+        .carddesc2n{
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 20px;
+    
+            a{
+                text-decoration: underline;
+            }
+        }
+    
+        .img1n{
+            padding-left: 90px;
+        }
+    
+        /*FIN NOSOTROS*/
+
+            /*CONTACTO*/
+    .h1con{
+        text-align: center;
+        text-decoration: underline;
+        padding: 20px;
+    }
+
+    .pruebalistadiv{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .listascon{
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .h3con{
+        padding-left: 30px;
+        padding-bottom: 15px;
+        text-decoration: underline;
+    }
+
+    .licon1{
+        padding-left: 20px;
+        font-size: 14px;
+    }
+
+    .h3con2{
+        padding-left: 30px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        text-decoration: underline;
+    }
+
+    .licon2{
+        padding-left: 20px;
+        font-size: 14px;
+    }
+
+    .h3con{
+        padding-left: 30px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+        text-decoration: underline;
+    }
+
+    .licon3{
+        padding-left: 20px;
+        font-size: 14px;
+        padding-bottom: 20px;
+    }
+
+    .divcon{
+        font-size: $font1;
+    }
+
+    .input:focus{
+        font-size: 17px;
+    }
+
+    .input::placeholder{
+        color: #000;
+        text-align: center;
+    }
+
+    textarea{
+        width: 400px;
     }
 
 
